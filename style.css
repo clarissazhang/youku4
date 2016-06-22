@@ -1,0 +1,563 @@
+@charset "utf-8";
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd, input { margin: 0; padding: 0; }
+body { font-size: 12px; }
+img { border: none; vertial-align:bottom;/*去除图片之间的空隙*/ }
+li { list-style: none; }
+input, select, textarea { outline: none; border: none; }
+textarea { resize: none; }
+a { text-decoration: none; }
+
+/*清浮动*/
+.clearfix{clear:both;}
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+/*公共部分*/
+.comwidth{
+	width:970px;
+	margin:0 auto;
+    
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+
+.mr20{
+	margin-right:20px;
+}
+/*头部*/
+.headerbox{
+	width:100%;
+	height:60px;
+	background:#f5f5f5;
+}
+.logo{
+	float:left;
+	padding-top:18px;
+	margin-right:180px;
+}
+.searchbox .search{
+	width:228px;
+	height:36px;
+	margin-top:10px;
+	border:2px solid #9f9f9f;
+	border-right:none;
+}
+.searchbox .button{
+	width:90px;
+	height:40px;
+	margin-top:10px;
+	background:url(images/search-btn.png) left top no-repeat;
+}
+.personal{
+	position:relative;
+	margin-left:40px;
+}
+.personal li{
+	float:left;
+	
+}
+.personal a{
+	font-size:14px;
+	color:#8e8e8e;
+}
+.loginmenu{
+	height:24px;
+	line-height:24px;
+	padding:18px 12px;
+	position:relative;  /*我们要想让他覆盖住下面的pulldown,就必须层级比pulldown高，那我们首先要给他加一个position:relative,因为只有这样，才能用z-index属性*/
+	z-index:2;
+}
+.login{
+	background:url(images/personal.png) left center no-repeat;
+	padding-left:20px;
+}
+
+.login a:hover{
+	color:#bd746b;
+	
+}
+.loginbox{
+	padding-left:22px;
+	padding-top:20px;
+}
+.loginbox p{
+	font-size:14px;
+	font-weight:bold;
+}
+
+.loginbutton{
+	padding:20px 0;
+	width:290px;
+	
+	
+}
+.loginbutton input{
+	font-size:14px;
+	width:90px;
+	height:30px;
+	border-radius:5px;
+	
+	
+}
+.button-login{
+	color:#fff;
+	background:#2d8ce0;
+	border:1px solid #1a67cb;
+}
+.button-rigister{
+	color:#555555;
+	background:#eff3f6;
+	border:1px solid #999999;
+	margin-left:20px;
+}
+.personalInfor li{
+	
+	width:115px;
+	height:16px;
+	padding:7px 0 7px 25px;
+}
+.personalInfor a{
+	color:#555555;
+}
+.personalInfor ul{
+	width:290px;
+	border-top:1px dashed #e4e4e4;
+	padding:17px 0;
+}
+.pulldown{
+	display:none;
+	position:absolute;
+	top:60px;
+	width:328px;
+	height:285px;
+	background:#fff;
+	border:1px solid #dddddd;
+	display:none;
+}
+.record{
+	background:url(images/record.png) left center no-repeat;
+	padding-left:20px;
+	
+}
+.login-left{
+	left:-50px;
+}
+.record-left{
+	left:-50px;
+}
+.personal .active .pulldown{
+	display:block;
+}
+.personal .active .loginmenu{
+	background:#fff;
+	border-left:1px solid #dddddd;
+	border-right:1px solid #dddddd;
+	padding:18px 11px 21px 11px;
+}
+.upload{
+	background:url(images/upload.png) left center no-repeat;
+	padding-left:20px;
+}
+/*导航 */
+.nav-list{
+	position:relative;
+	width:970px;
+	height:36px;
+	margin-top:10px;
+	border-bottom:3px solid #e5e5e5;
+	
+	}
+.nav-list a{
+	color:#555555;
+}
+.nav-list li{
+	float:left;
+}
+.nav-classify,.nav-news,.nav-infor {
+position:absolute;
+	
+}
+.nav-classify li{
+	
+	height:36px;
+	line-height:36px;
+	padding:0 10px;
+	font-size:16px;
+	
+}
+.nav-active{
+	border-bottom:3px solid red;
+}
+.nav-classify li{
+	height:36px;
+	line-height:36px;
+	padding:0 10px;
+	font-size:16px;
+}
+.nav-news {
+	left:370px;
+}
+.nav-news li{
+	font-size:14px;
+	padding:0 10px;
+	height:36px;
+	line-height:36px;
+	background:url(images/pulldownicon.png) right center no-repeat;
+}
+.nav-infor{
+	margin-left:73px; 
+	right:0;
+}
+.nav-infor li{
+	font-size:14px;
+	padding:0 5px;
+	line-height:36px;
+    
+}
+/*实拍视频*/
+.real-video{
+	margin-top:20px;
+	margin-bottom:50px;	
+	
+}
+
+.real-left{
+	width:420px;
+	float:left;
+	margin-right:18px;
+	
+}
+.rightgap{
+	margin-right:18px;
+}
+.mb18{
+	margin-bottom:18px;
+}
+.real-mid{
+	width:200px;
+	float:left;
+	margin-right:18px;
+	
+}
+.real-right{
+	width:308px;
+	
+	float:left;
+}
+.specialgap{
+	margin-bottom:22px;
+}
+.superinfor{
+	width:308px;
+	height:20px;
+	background:#878787;
+}
+.superinfor p{
+	color:#ffffff;
+	line-height:20px;
+	text-indent:2px;
+}
+.superinfor span{
+	margin-left:82px;
+}
+/*个人中心 */
+.personalcenter {
+	margin-top:50px;
+	height:242px;
+}
+.personalfont{
+	height:32px;
+	margin-bottom:20px;
+}
+.personalfont p{
+	float:left;
+	font-size:26px;
+	line-height:32px;
+}
+
+.personal-individ {
+	float:left;
+	margin-left:20px;
+	font-size:14px;
+}
+.personal-individ li{
+	float:left;
+	padding:10px;
+}
+.personalactive{
+	background:#05a6e0;
+    color:#ffffff;
+}
+.personal-video{
+	margin-top:22px;
+	
+}
+.personal-video img{
+	display:block;
+}
+.imgcontainer{
+	
+	position:relative;
+	margin-right:20px;
+	
+}
+
+.videodiscription{
+	
+	width:198px;
+	height:80px;
+	background:#f5f5f5;
+	padding-left:4px;
+
+}
+
+.musicdiscription{
+	
+	width:198px;
+	height:46px;
+	background:#f5f5f5;
+	padding-left:4px;
+	padding-top:10px;
+
+}
+
+.musicdiscription p{
+	margin-top:10px;
+}
+.videodiscription h3{
+	line-height:20px;
+}
+.videodiscription p{
+	margin-top:10px;
+}
+.enter-personal{
+	float:right;
+	font-size:18px;
+	height:70px;
+	width:48px;
+	background:#f5f5f5;
+	line-height:24px;
+	padding: 60px 15px;
+}
+/*优酷出品*/
+.original{
+	
+	margin-top:48px;
+	margin-bottom:50px;
+}
+.original-nav{
+	height:30px;
+}
+.original-nav li{
+	float:left;
+	font-size:20px;
+	padding:4px 20px;
+	
+}
+.original-active{
+	background:#05a6e0;
+	color:#ffffff;
+}
+.pos{
+	
+	margin-bottom:22px;
+	
+}
+.original-rightfont{
+	display:inline-block;
+	padding-top:10px;
+	vertical-align:top;
+	height:40px;
+	font-size:14px;
+}
+.original-rightfont p{
+	margin-top:3px;
+}
+.rr{
+	margin-bottom:15px;
+}
+.iconhead{
+    padding:30px 0 10px 40px;
+	position:absolute;
+	top:86px;
+	left:4px;
+	background:url(images/iconhead.png) left center no-repeat;
+	}
+}
+.iconhead span{
+	padding-left:30px;
+}
+.pt{
+	height:60px;
+	padding-top:20px;
+}
+
+.height70{
+	height:70px;
+}
+.original-left{
+	float:left;
+	width:670px;
+}
+.orignal-right{
+	width:308px;
+}
+.playtimes{
+	padding-left:20px;
+	background:url(images/playbtn.png) left center no-repeat;
+}
+
+/*电视剧*/
+.tv-left{
+	float:left;
+	
+	width:660px;
+	
+
+}
+.tv-right{
+	float:left;
+	width:300px;
+	
+}
+
+.tvname li{
+	
+	height:20px;
+	
+	
+	font-size:14px;
+	margin-bottom:10px;
+
+}
+.tvname div{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	background:#02a6e0;
+	color:#ffffff;
+	line-height: 20px;
+	text-align: center;
+}
+.tvname .red{
+	background:#ee3e21;
+}
+.tvname span{
+vertical-align:top;
+margin-left: 10px;
+}
+.startalk{
+	height:50px;
+	margin-bottom:20px;
+}
+.rightmid{
+	margin-bottom:14px;
+	padding:1px;
+}
+.list{
+	margin:20px 0 10px 0;
+}
+.list a{
+	color:#545454;
+	margin-right:20px;
+}
+.mr{
+	margin-right:0;
+}
+.ml{
+	margin-left:0;
+}
+
+/*院线 会员*/
+.leftArea{
+	width:660px;
+}
+.rightArea{
+	width:310px;
+}
+.vip{
+	font-size:14px;
+	line-height:30px;
+	text-align:center;
+	color:#a6a6a6;
+}
+.mt50{
+	margin-top:50px;
+}
+.mr70{
+	margin-right:70px;
+}
+.tvname .mb{
+	margin-bottom:0;
+}
+.mb10{
+
+	margin-bottom:10px;
+}
+.mr64{
+	margin-right:64px;
+}
+.tr{text-align:right;}
+.mtp{
+	margin-top:-8px;
+}
+.cc{
+	color:#545454;
+}
+.news {
+	padding-top:26px;
+
+}
+.news a{
+	color:#545454;
+	font-size:14px;
+}
+.news div{
+	padding-left:10px;
+	background:url(images/drop.png) left center no-repeat;
+}
+.news li{
+	margin:14px 0;
+	width:50%;  /*important*/
+
+	float:left;
+}
+/*广 告*/
+.advertisement{
+	width:970px;
+	height:100px;
+}
+.link{
+	padding-top:28px;
+	border-top:3px solid #dcdcdc;
+}
+.link-list{
+	margin-right:10px;
+}
+.link-list li{
+	padding:9px 0;
+}
+.link-list a{
+	padding-right:17px;
+}
+.app{
+	background:url(images/qr.png) left center no-repeat;
+	padding-left:90px;
+	height:90px;
+}
+.app p{
+	padding-left:5px;
+	padding-top:26px;
+	line-height:20px;
+
+}
+.app span{
+	font-size:16px;
+}
+
+.footer p{
+	text-align:center;
+}

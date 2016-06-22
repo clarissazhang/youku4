@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<title>新浪首页</title>
+<link style="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header_bar">
+	<div class="header_box">
+		<div class="header_list comWidth">
+	<ul class="header_left fl">
+		<li ><a href="#" class="header_link">设为首页</a></li>
+		<li><a href="#"  class="header_link down_link">我的菜单<i class="pull_down"></i></a>
+		<dl class="pulldownlist" style="display:none">
+			<dd><a>新闻</a></dd>
+			<dd><a>体育</a></dd>
+			<dd><a>财经</a></dd>
+			<dd><a>娱乐</a></dd>
+		</dl></li>
+		<li><a href="#" class="header_link">手机新浪网</a></li>
+		<li><a href="#" class="header_link down_link">移动客户端<i class="pull_down"></i></a>
+		<dl class="pulldownlist" style="display:none">
+			<dd><a>新浪微博</a></dd>
+			<dd><a>新浪新闻</a></dd>
+			<dd><a>新浪体育</a></dd>
+			<dd><a>新浪财经</a></dd>
+			<dd><a>天气通</a></dd>
+		</dl></li>
+		
+		
+	</ul>
+	<a href="#" class="header_close fr" ></a>
+	<ul class="header_left fr">
+		<!--已登录
+		<li>
+			<span>您好！</span>
+			<a href="#" class="header_link down_link">C_n1<i class="pull_down"></i></a>
+		<dl class="pulldownlist widthchange" style="display:none">
+			<dd><a>我的收藏</a></dd>
+			<dd><a>退出</a></dd>
+		</dl></li>
+		-->
+		<!--未登录-->
+		<li>
+			
+			<a href="#" class="header_link down_link">登录</a>
+			<div class="login" style="display:none">
+				<a class="loginclose"> </a>
+			<div class="loginmain">
+		    <p>新浪微博、博客、邮箱帐号，请直接登录</p>
+				<dl>
+					<dd class="logintype">
+						<span>微博/博客/邮箱/手机号</span>
+					 <input type="text"/>
+			        
+					</dd>
+					<dd class="logintype">
+						<span>请输入密码</span>
+					 <input type="text"/>
+			        
+					</dd>
+					<dd class="loginbtn">
+						<input type="button" class="loginb" value="登陆">
+						<label>
+			                <input type="checkbox" checked="checked"/><span>下次自动登陆</span>
+			            </label>
+					</dd>
+					<dd>
+						<a class="loginlink">忘记密码</a>
+					    <a class="loginlink">立即注册</a>
+					</dd>
+				</dl>
+			</div>
+			</div>
+		</li>
+		
+		<li><a href="#" class="header_link down_link">微博<i class="pull_down"></i></a>
+		<dl class="pulldownlist widthchange" style="display:none">
+			<dd><a>私信</a></dd>
+			<dd><a>评论</a></dd>
+			<dd><a>@我</a></dd>
+		</dl></li>
+		<li><a href="#" class="header_link down_link">博客<i class="pull_down"></i></a>
+		<dl class="pulldownlist" style="display:none">
+			<dd><a>博客评论</a></dd>
+			<dd><a>未读提醒</a></dd>
+		</dl></li>
+		<li><a href="#" class="header_link down_link">邮箱<i class="pull_down"></i></a>
+		<dl class="pulldownlist" style="display:none">
+			<dd><a>免费邮箱</a></dd>
+			<dd><a>企业邮箱</a></dd>
+			
+		</dl>
+		</li>
+		<li><a href="#" class="header_link">网站导航</a></li>
+		
+	</ul>
+	
+	</div>
+	
+	<div class="content comWidth">
+	<div class="search">
+	<div class="sina_logo fl"></div>
+	
+	<div class="searchbox fl">
+		<div class="searchboxleft fl"><h3>微博</h3>
+		<ul class="search_pulldown" style="display:none">
+			<li><a>微博</a></li>
+			<li><a>新闻</a></li>
+			<li><a>图片</a></li>
+			<li><a>博客</a></li>
+			<li><a>视频</a></li>
+			<li><a>更多&gt;&gt;</a></li>
+		</ul>
+		
+		</div>
+		<div class="searchboxtype fl">
+			<span>请输入关键字</span>
+			<input type="text"/>
+			
+		</div>
+		<div class="searchboxbtn fl">
+			<input type="button"/>
+			</div>
+			
+	</div>
+	<div class="weather fl"><span>北京</span><img src="images/sun.png"><span>晴 0~7℃</span></div>
+	<div class="jiandu fl"></div>
+	</div>
+	<div class="nav comWidth">
+		<div class="nav_1 first">
+		<dl>
+			<dd class="nav_firstword"><a href="#">新闻</a></dd>
+			<dd><a href="#">军事</a></dd>
+			<dd class="nav_special"><a href="#">社会</a></dd>
+		</dl>
+		<dl>
+			<dd class="nav_firstword"><a href="#">财经</a></dd>
+			<dd><a href="#">股票</a></dd>
+			<dd><a href="#">基金</a></dd>
+		</dl>
+		<dl>
+			<dd class="nav_firstword"><a href="#">科技</a></dd>
+			<dd><a href="#">手机</a></dd>
+			<dd><a href="#">探索</a></dd>
+		</dl>
+		
+		</div>
+		<div class="nav_1">
+		<dl>
+			<dd class="nav_firstword"><a href="#">体育</a></dd>
+			<dd><a href="#">英超</a></dd>
+			<dd class="nav_special"><a href="#">NBA</a></dd>
+		</dl>
+		<dl>
+			<dd class="nav_firstword"><a href="#">娱乐</a></dd>
+			<dd><a href="#">明星</a></dd>
+			<dd><a href="#">星座</a></dd>
+		</dl>
+		<dl>
+			<dd class="nav_firstword"><a href="#">汽车</a></dd>
+			<dd><a href="#">报价</a></dd>
+			<dd><a href="#">买车</a></dd>
+		</dl>
+		
+		</div>
+		<div class="nav_1">
+		<dl>
+			<dd class="nav_firstword"><a href="#">博客</a></dd>
+			<dd><a href="#">专栏</a></dd>
+			<dd class="nav_special"><a href="#">天气</a></dd>
+		</dl>
+		<dl>
+			<dd class="nav_firstword"><a href="#">视频</a></dd>
+			<dd><a href="#">综艺</a></dd>
+			<dd><a href="#">育儿</a></dd>
+		</dl>
+		<dl>
+			<dd class="nav_firstword"><a href="#">房产</a></dd>
+			<dd><a href="#">二手方</a></dd>
+			<dd><a href="#">家居</a></dd>
+		</dl>
+		
+		</div>
+		<div class="nav_1">
+		<dl>
+			<dd class="nav_firstword"><a href="#">读书</a></dd>
+			<dd><a href="#">历史</a></dd>
+			<dd class="nav_special"><a href="#">图片</a></dd>
+		</dl>
+		<dl>
+			<dd class="nav_firstword"><a href="#">教育</a></dd>
+			<dd><a href="#">健康</a></dd>
+			<dd><a href="#">中医</a></dd>
+		</dl>
+		<dl>
+			<dd class="nav_firstword"><a href="#">时尚</a></dd>
+			<dd><a href="#">女性</a></dd>
+			<dd><a href="#">收藏</a></dd>
+		</dl>
+		
+		</div>
+		<div class="nav_1">
+		<dl>
+			<dd class="nav_firstword"><a href="#">城市</a></dd>
+			<dd><a href="#">天津</a></dd>
+			<dd class="nav_special"><a href="#">园博</a></dd>
+		</dl>
+		<dl>
+			<dd class="nav_firstword"><a href="#">旅游</a></dd>
+			<dd><a href="#">航空</a></dd>
+			<dd><a href="#">出国</a></dd>
+		</dl>
+		<dl>
+			<dd class="nav_firstword"><a href="#">论坛</a></dd>
+			<dd><a href="#">交友</a></dd>
+			<dd><a href="#">SHOW</a></dd>
+		</dl>
+		
+		</div>
+		<div class="nav_1">
+		<dl>
+			<dd class="nav_firstword"><a href="#">游戏</a></dd>
+			<dd><a href="#">棋牌</a></dd>
+			<dd class="nav_special"><a href="#">页游</a></dd>
+		</dl>
+		<dl>
+			<dd class="nav_firstword"><a href="#">佛学</a></dd>
+			<dd><a href="#">高尔夫</a></dd>
+			<dd><a href="#">彩票</a></dd>
+		</dl>
+		<dl>
+			<dd class="nav_firstword"><a href="#">应用</a></dd>
+			<dd><a href="#">必备</a></dd>
+			<dd><a href="#">手游</a></dd>
+		</dl>
+		
+		</div>
+		<div class="nav_1 last">
+		<dl>
+			<dd class="nav_firstword"><a href="#">搜索</a></dd>
+			<dd><a href="#">客户端</a></dd>
+			<dd class="nav_special"><a href="#">微博</a></dd>
+		</dl>
+		<dl>
+			<dd class="nav_firstword"><a href="#">爱问</a></dd>
+			<dd><a href="#">客服</a></dd>
+			<dd><a href="#">邮箱</a></dd>
+		</dl>
+		<dl>
+			<dd class="nav_firstword"><a href="#">公益</a></dd>
+			<dd><a href="#">English</a></dd>
+			<dd><a href="#">导航</a></dd>
+		</dl>
+		
+		</div>
+		
+	</div>
+	<div class="house comWidth">
+		<ul>
+			<li><a href="#">不限购100席</a></li>
+			<li><a href="#">亦庄地标国锐金嵿</a></li>
+			<li><a href="#">地铁上盖品牌物业</a></li>
+			<li><a href="#">亿城江湾绿洲</a></li>
+			<li><a href="#">珠海横琴置业梦</a></li>
+			<li><a href="#">抄底三亚心小两居</a></li>
+			<li><a href="#">大兴美宅 93万起</a></li>
+			<li><a href="#">紫竹桥 3居放量</a></li>
+		</ul>
+	</div>
+	<div class="unicompic">
+		<a><img src="images/unicom.png"/></a>
+	</div>
+	
+	<div class="house1 comWidth">
+		<ul>
+			<li><a href="#">独家图解看房大全</a></li>
+			<li><a href="#">四季悦城周周送铺</a></li>
+			<li><a href="#">双十二特惠抢现房</a></li>
+			<li><a href="#">昌平核心119m²三居</a></li>
+			<li><a href="#">房山核心新盘抄底</a></li>
+			<li><a href="#">房山核心新盘抄底</a></li>
+			<li><a href="#">五环 99万微别墅</a></li>
+			<li><a href="#">刚需房开盘早知道</a></li>
+		</ul>
+	</div>
+	<div class="thirdrows comWidth">
+		<div class="th_left">
+			<img src="images/diqiuweishi.png"/><br>
+			<img src="images/biguiyuan.png" class="biguiyuan"/>
+			<div class="sina_product">
+				<div class="product_title"><h3>新浪产品</h3></div>
+				<div class="product_nav">
+					<ul class="product_pic">
+						<li><img src="images/blue.png"/></li>
+						<li><img src="images/yellow.png"/></li>
+						<li><img src="images/red.png"/></li>
+					</ul>
+						<ul class="product_info">
+						<li><a href="#">新浪财经</a></li>
+						<li><a href="#">新浪新闻</a></li>
+						<li><a href="#">新浪体育</a></li>
+					</ul>
+					<ul class="product_info special">
+						<li><a href="#">新浪阅读</a></li>
+						<li><a href="#">新浪秒拍</a></li>
+						<li><a href="#">新浪微博</a></li>
+					</ul>
+				</div>
+			</div>
+				<div class="sina_edu">
+				<div class="edu_nav">
+					<ul class="edu_banner">
+						<li>体育</li>
+						<li>外语</li>
+						<li>教育</li>
+						<li>精锐</li>
+					</ul>
+              </div>
+				<div class="edu_pic"><img src="images/shendian.png"/></div>
+				<div class="edu_font">
+				<ul class="edu_fontul">
+					<li>中国榜样家长出炉：潮爸得奖成主流</li>
+					<li>教育did you know第二季视频全球首播</li>
+				</ul>
+				</div>
+				
+			</div>
+			<div class="adpic">
+					<img src="images/leftadpic.png"/>
+			</div>
+			<div class="adpic1">
+			<img src="images/leftadpic1.png"/>
+			</div>
+		</div>
+		<div class="th_middle">
+			<div class="th_mid_com">
+				<div class="th_mid_banner">
+					<ul>
+						<li class="th_mid_special">视频</li>
+						<li>综艺</li>
+					</ul>
+				</div>
+				<div class="th_mid_pic">
+				<p><img src="images/video.png"/></p>
+				<p class="video2"><img src="images/video2.png"/></p>
+				</div>
+				
+				<ul class="th_mid_news">
+					<li><a href="#" class="camera">新闻|毛泽东生平珍贵影像集</a></li>
+					<li><a href="#" class="camera">东湖梅岭毛泽东 歼20新涂装</a></li>
+					<li><a href="#" class="camera">安倍拜鬼 不想伤害中韩感情</a></li>
+					<li><a href="#" class="camera">辽宁舰高速回旋 贫困县豪楼</a></li>
+					<li><a href="#" class="camera">奔驰女被劫灌药 女生遭割喉</a></li>
+				</ul>
+				<ul class="th_mid_news2">
+					<li><a href="#" class="camera">新闻|毛泽东生平珍贵影像集</a></li>
+					<li><a href="#" class="camera">东湖梅岭毛泽东 歼20新涂装</a></li>
+					<li><a href="#" class="camera">安倍拜鬼 不想伤害中韩感情</a></li>
+					<li><a href="#" class="camera">辽宁舰高速回旋 贫困县豪楼</a></li>
+					<li><a href="#" class="camera">奔驰女被劫灌药 女生遭割喉</a></li>
+				</ul>
+				<ul class="th_mid_news3">
+					<li><a href="#" class="camera">娱乐|王诗龄喂李云迪瓜子 《爸爸去哪五封催泪信》</a></li>
+					<li><a href="#" class="camera">王菲欲夺女儿李嫣抚养权 巩莉情史：险嫁摩纳哥亲王</a></li>
+					<li><a href="#" class="camera">日男星17年后惊觉儿子非亲生 小S遭二女儿催生儿子</a></li>
+					<li><a href="#" class="camera">搞笑|呆萌企鹅悲催瞬间 </a><a class="yellowfont">招聘制作、编辑、设计师</a></li>
+					<li><a href="#" class="camera">脱口秀|官员不上班照领工资 纪录|东湖梅岭毛泽东</a></li>
+					<li><a href="#" class="camera yellowfont">大片|毛泽东 零下38度 烽火佳人</a> <a>记忆如何被操纵</a></li>
+					<li><a href="#" class="camera yellowfont">秒拍|佟大为享受滑雪好风光</a> <a>网曝幼儿园女老师虐童</a></li>
+				</ul>
+				
+			</div>
+			<div class="th_mid_com">
+				<div class="th_mid_banner">
+					<ul>
+						<li class="th_mid_special">视频</li>
+						<li>综艺</li>
+					</ul>
+				</div>
+				<ul class="th_mid_news3 guessulove">
+					<li><a href="#">中央举行纪念毛泽东诞辰120周年座谈会</a></li>
+					<li><a href="#">安拜：参拜没有伤害中国和韩国意思</a></li>
+					<li><a href="#">农民自称康熙年间第一能臣后裔 公布先祖画像</a></li>
+					<li><a href="#">交警队长被曝与女下属偷情被砍十余刀</a></li>
+					<li><a href="#">社科院：大连取代北京成为新“首堵”城市</a></li>
+					<li><a href="#">社科院：大连取代北京成为新“首堵”城市</a></li>
+					<li><a href="#">女子抱小孩上公交无人让座 司机停车7分钟</a></li>
+					<li><a href="#">外交部回应安倍参拜靖国神社：采取措施纠正错误</a></li>
+					<li class="guessspecial"><a href="#" class="yellowfont">看收藏名博辩知真假</a><a> 为您推荐27位星座达人</a></li>
+					
+				</ul>
+				
+				<ul class="th_mid_news3 guesslast"><li>看投资海淀|中关村国家示范区 海滨区1+10政策体系</li></ul>
+				
+			</div>
+				<div class="th_mid_com">
+				<div class="th_mid_banner">
+					<ul>
+						<li class="th_mid_special">视频</li>
+						<li>综艺</li>
+					</ul>
+				</div>
+				<div class="th_mid_pic">
+				<p><img src="images/sport.png"/></p>
+				</div>
+				
+				<ul class="th_mid_news sport">
+					<li><a href="#">英超-曼城2-1胜利物浦距榜首1分</a></li>
+					<li><a href="#">鲁尼传射曼联3球3-2逆转5连胜</a></li>
+					<li><a href="#">沃尔科特两球阿森纳3-1返榜首</a></li>
+					<li><a href="#">阿轧尔绝杀切尔西主场3连胜 视频</a></li>
+					
+				</ul>
+				<ul class="th_mid_news sport">
+					<li><a href="#">英超-曼城2-1胜利物浦距榜首1分</a></li>
+					<li><a href="#">鲁尼传射曼联3球3-2逆转5连胜</a></li>
+					<li><a href="#">沃尔科特两球阿森纳3-1返榜首</a></li>
+					<li><a href="#">阿轧尔绝杀切尔西主场3连胜 视频</a></li>
+					
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	
+</div>
+</div>
+
+</body>
+</html>
