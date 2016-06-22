@@ -236,6 +236,7 @@ position:absolute;
 .mb18{
 	margin-bottom:18px;
 }
+.mb20{margin-bottom:20px;}
 .real-mid{
 	width:200px;
 	float:left;
@@ -251,7 +252,7 @@ position:absolute;
 	margin-bottom:22px;
 }
 .superinfor{
-	width:308px;
+	width:310px;
 	height:20px;
 	background:#878787;
 }
@@ -263,10 +264,21 @@ position:absolute;
 .superinfor span{
 	margin-left:82px;
 }
+.leftAreabottom img{
+	
+	float:left;
+
+}
+.imgstyle{
+	display:block;
+}
 /*个人中心 */
 .personalcenter {
 	margin-top:50px;
 	height:242px;
+}
+.personalfont p{
+	margin-right:20px;
 }
 .personalfont{
 	height:32px;
@@ -276,11 +288,12 @@ position:absolute;
 	float:left;
 	font-size:26px;
 	line-height:32px;
+	color:#8f8f8f;
 }
 
 .personal-individ {
 	float:left;
-	margin-left:20px;
+	
 	font-size:14px;
 }
 .personal-individ li{
@@ -290,6 +303,9 @@ position:absolute;
 .personalactive{
 	background:#05a6e0;
     color:#ffffff;
+}
+.fontstyle{
+	font-size:20px;
 }
 .personal-video{
 	margin-top:22px;
@@ -307,7 +323,7 @@ position:absolute;
 
 .videodiscription{
 	
-	width:198px;
+	width:196px;
 	height:80px;
 	background:#f5f5f5;
 	padding-left:4px;
@@ -335,13 +351,21 @@ position:absolute;
 }
 .enter-personal{
 	float:right;
+	width:50px;
+	height:128px;
+	line-height:20px;
+	padding:62px 20px 0 20px;
 	font-size:18px;
-	height:70px;
-	width:48px;
+	text-align: center;
 	background:#f5f5f5;
-	line-height:24px;
-	padding: 60px 15px;
+	
 }
+
+.rightbottom{
+	width:310px;
+	height:220px;
+}
+
 /*优酷出品*/
 .original{
 	
