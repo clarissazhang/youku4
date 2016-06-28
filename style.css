@@ -38,18 +38,74 @@ a { text-decoration: none; }
 	padding-top:18px;
 	margin-right:180px;
 }
-.searchbox .search{
+.searchbox{
+	
+	position:relative;
+	margin-top:10px;
+	height:40px;
+}
+.search{
 	width:228px;
 	height:36px;
-	margin-top:10px;
+	
 	border:2px solid #9f9f9f;
 	border-right:none;
 }
-.searchbox .button{
+
+.search-active{
+   border-top:2px solid #3EABFF;
+   border-left:2px solid #3EABFF;
+}
+.button{
 	width:90px;
 	height:40px;
-	margin-top:10px;
 	background:url(images/search-btn.png) left top no-repeat;
+}
+.search-pulldown{
+	display:none;
+	position:absolute;
+	top:38px;
+	width:446px;
+	height:143px;
+	border:2px solid #3EABFF;
+	background:#fff;
+	padding:2px 3px 3px 3px;
+	z-index: 1;
+}
+.search-tvshow{
+	width:259px;
+
+}
+.search-tvshow li{
+	height:32px;
+	font-size:14px;
+	color:#909090;
+	background:#F3F3F3;
+	padding-right:8px;
+
+	line-height:32px;
+	text-indent: 10px;
+}
+
+.tv{
+width:176px;
+height:100%;
+background:#F3F3F3;
+font-size:12px;
+padding-left:10px;
+}
+.tv dd{
+	float:left;
+}
+.explain{
+	margin-top:38px;
+	margin-left:10px;
+}
+.explain p{
+	line-height:18px;
+}
+.explain div{
+	margin-bottom:10px;
 }
 .personal{
 	position:relative;
@@ -72,7 +128,7 @@ a { text-decoration: none; }
 }
 .login{
 	background:url(images/personal.png) left center no-repeat;
-	padding-left:20px;
+	padding:5px 0 5px 20px;
 }
 
 .login a:hover{
@@ -91,8 +147,6 @@ a { text-decoration: none; }
 .loginbutton{
 	padding:20px 0;
 	width:290px;
-	
-	
 }
 .loginbutton input{
 	font-size:14px;
@@ -135,11 +189,11 @@ a { text-decoration: none; }
 	height:285px;
 	background:#fff;
 	border:1px solid #dddddd;
-	display:none;
+	z-index: 1;
 }
 .record{
 	background:url(images/record.png) left center no-repeat;
-	padding-left:20px;
+	padding:5px 0 5px 20px;
 	
 }
 .login-left{
@@ -155,11 +209,14 @@ a { text-decoration: none; }
 	background:#fff;
 	border-left:1px solid #dddddd;
 	border-right:1px solid #dddddd;
-	padding:18px 11px 21px 11px;
+	padding:18px 12px 19px 12px;
 }
 .upload{
 	background:url(images/upload.png) left center no-repeat;
-	padding-left:20px;
+	padding:5px 0 5px 20px;
+}
+.upload-left{
+	left:-42px;
 }
 /*导航 */
 .nav-list{
@@ -180,29 +237,24 @@ a { text-decoration: none; }
 position:absolute;
 	
 }
-.nav-classify li{
-	
-	height:36px;
-	line-height:36px;
-	padding:0 10px;
-	font-size:16px;
-	
-}
+
+
 .nav-active{
 	border-bottom:3px solid red;
 }
 .nav-classify li{
 	height:36px;
 	line-height:36px;
-	padding:0 10px;
+	margin-right:20px;
 	font-size:16px;
 }
 .nav-news {
-	left:370px;
+	left:390px;
 }
 .nav-news li{
 	font-size:14px;
-	padding:0 10px;
+	padding-right:10px;
+	margin-right:20px;
 	height:36px;
 	line-height:36px;
 	background:url(images/pulldownicon.png) right center no-repeat;
@@ -213,9 +265,12 @@ position:absolute;
 }
 .nav-infor li{
 	font-size:14px;
-	padding:0 5px;
+	margin-right:10px;
 	line-height:36px;
     
+}
+.nav-news .none{
+	background:none;
 }
 /*实拍视频*/
 .real-video{
@@ -248,7 +303,7 @@ position:absolute;
 	
 	float:left;
 }
-.specialgap{
+.mb22{
 	margin-bottom:22px;
 }
 .superinfor{
@@ -272,16 +327,159 @@ position:absolute;
 .imgstyle{
 	display:block;
 }
+.img_b{
+	position: relative;
+	width:420px;
+	height:240px;
+}
+.fontpart{
+	position:absolute;
+	left:0;
+    bottom:0;
+    color:#fff;
+    width:420px;
+	height:70px;
+   background:url(images/shadow_b.png) no-repeat;
+}
+.fontpart h2{
+	font-size:16px;
+   font-weight: normal;
+   line-height:40px;
+}
+
+.userid{
+	background:url(images/userName.png) no-repeat;
+	padding-left:16px;
+}
+.play{
+	width:58px;
+	height:56px;
+	background:url(images/playbtn_b.png) no-repeat;
+	display:inline-block;
+	margin-left:5px;
+	margin-right:16px;
+}
+.playtimes{
+	background:url(images/times.png) no-repeat;
+	padding-left:16px;
+}
+.comment{
+	background:url(images/comment.gif) no-repeat;
+	padding-left:16px;
+}
+.txt span{
+	margin-right:8px;
+}
+.border{
+	background:url(images/border.png) center top no-repeat;
+	padding-top:4px;
+	margin-top:-4px;
+	
+}
+.img_s{
+	position:relative;
+	width:200px;
+	height:110px;
+
+}
+.img_titbox{
+position:absolute;
+color:#fff;
+font-size:14px;
+left:0;
+bottom:0;
+background:url(images/shadow.png) no-repeat;
+width:200px;
+height:40px;
+}
+.viplogo{
+	position:absolute;
+	left:0;
+	top:4px;
+	background:url(images/vip_play.png) no-repeat;
+
+	width:43px;
+	height:43px;
+}
+.vip_containerbox{
+	width:145px;
+}
+.img_tit{
+	position:absolute;
+	bottom:0;
+	left:0;
+	padding-bottom:3px;
+}
+.img_titbox .cinema_h3{
+	font-size:14px;
+	line-height:25px;
+
+}
+.img_titbox .cinema_p{
+	font-size:12px;
+	line-height:10px;
+	
+}
+.cinema_p span{
+	font-size:18px;
+	color:#E12728;
+	padding-right:10px;
+}
+.pl{
+	padding-left:5px;
+}
+.pr{
+	padding-right:5px;
+}
+.shadow{
+display:none;
+position:absolute;
+}
+
+.fontpart_s{
+	padding:15px 8px 9px 6px;
+	position:absolute;
+	color:#c4c9c0;
+	top:0;
+	line-height:17px;
+	width:186px;
+}
+
+.fontpart_s .userid{
+	color:#fffbf3;
+	background:url(images/userid.gif) left center no-repeat;
+	padding-left:16px;
+
+}
+.fontpart_s .playtimes{
+	color:#fffbf3;
+	background:url(images/playbtn.png) left center no-repeat;
+	padding-left:16px;
+
+}
+.playbtn{
+	background:url(images/playbtn.gif) no-repeat;
+	width:57px;
+	height:25px;
+	margin-top:8px;
+}
+.tr{
+	right:0;
+	padding-right:5px;
+}
 /*个人中心 */
 .personalcenter {
 	margin-top:50px;
 	height:242px;
 }
+.personalcenter li{
+	float:left;
+}
 .personalfont p{
 	margin-right:20px;
 }
 .personalfont{
-	height:32px;
+	height:30px;
 	margin-bottom:20px;
 }
 .personalfont p{
@@ -322,38 +520,50 @@ position:absolute;
 }
 
 .videodiscription{
-	
 	width:196px;
-	height:80px;
+	height:60px;
 	background:#f5f5f5;
 	padding-left:4px;
+	padding-top:20px;
+	color:#545454;
 
 }
-
+.height72{
+	height:72px;
+}
+.userCom-wh{
+	width:200px;
+	height:202px;
+}
+.wh90{
+	width:90px;
+	height:90px;
+}
 .musicdiscription{
 	
 	width:198px;
-	height:46px;
+	height:47px;
 	background:#f5f5f5;
 	padding-left:4px;
 	padding-top:10px;
+	color:#545454;
 
 }
 
 .musicdiscription p{
 	margin-top:10px;
+
 }
 .videodiscription h3{
+	font-size:14px;
 	line-height:20px;
-}
-.videodiscription p{
-	margin-top:10px;
+	
 }
 .enter-personal{
 	float:right;
 	width:50px;
 	height:128px;
-	line-height:20px;
+	line-height:25px;
 	padding:62px 20px 0 20px;
 	font-size:18px;
 	text-align: center;
@@ -381,13 +591,16 @@ position:absolute;
 	padding:4px 20px;
 	
 }
+.original-font li{
+ padding:8px 20px;
+}
 .original-active{
 	background:#05a6e0;
 	color:#ffffff;
 }
-.pos{
+.mb24{
 	
-	margin-bottom:22px;
+	margin-bottom:24px;
 	
 }
 .original-rightfont{
@@ -401,7 +614,7 @@ position:absolute;
 	margin-top:3px;
 }
 .rr{
-	margin-bottom:15px;
+	margin-bottom:20px;
 }
 .iconhead{
     padding:30px 0 10px 40px;
@@ -414,10 +627,7 @@ position:absolute;
 .iconhead span{
 	padding-left:30px;
 }
-.pt{
-	height:60px;
-	padding-top:20px;
-}
+
 
 .height70{
 	height:70px;
@@ -428,10 +638,6 @@ position:absolute;
 }
 .orignal-right{
 	width:308px;
-}
-.playtimes{
-	padding-left:20px;
-	background:url(images/playbtn.png) left center no-repeat;
 }
 
 /*电视剧*/
@@ -476,13 +682,17 @@ margin-left: 10px;
 .startalk{
 	height:50px;
 	margin-bottom:20px;
+	
+}
+.st{
+	margin-top:-3px;
 }
 .rightmid{
-	margin-bottom:14px;
-	padding:1px;
+	margin-bottom:28px;
+	
 }
 .list{
-	margin:20px 0 10px 0;
+	margin:20px 0;
 }
 .list a{
 	color:#545454;
@@ -494,8 +704,22 @@ margin-left: 10px;
 .ml{
 	margin-left:0;
 }
-
+.rio{
+	width:640px;
+	height:110px;
+}
+.wh{
+	height:50px;
+}
 /*院线 会员*/
+.music-wh{
+	height:167px;
+	width:200px;
+}
+.video-wh{
+	width:200px;
+	height:190px;
+}
 .leftArea{
 	width:660px;
 }
@@ -526,13 +750,13 @@ margin-left: 10px;
 }
 .tr{text-align:right;}
 .mtp{
-	margin-top:-8px;
+	margin-top:-10px;
 }
 .cc{
 	color:#545454;
 }
 .news {
-	padding-top:26px;
+	padding-top:24px;
 
 }
 .news a{
@@ -548,6 +772,18 @@ margin-left: 10px;
 	width:50%;  /*important*/
 
 	float:left;
+}
+.life_h2{
+	font-size:14px;
+	line-height:25px;
+	color:#FFFFFF;
+}
+.life_p{
+	font-size:12px;
+	color:##BABABA;
+}
+.life_p span{
+	margin-right:10px;
 }
 /*广 告*/
 .advertisement{
@@ -566,6 +802,7 @@ margin-left: 10px;
 }
 .link-list a{
 	padding-right:17px;
+	color:#545454;
 }
 .app{
 	background:url(images/qr.png) left center no-repeat;
